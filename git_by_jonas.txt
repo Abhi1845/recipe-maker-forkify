@@ -1,29 +1,6 @@
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % npm start
+---> npm start
 
-> forkify@1.0.0 start
-> parcel index.html
-
-Server running at http://localhost:1234
-✨ Built in 45ms
-npm notice 
-npm notice New minor version of npm available! 8.11.0 -> 8.15.1
-npm notice Changelog: https://github.com/npm/cli/releases/tag/v8.15.1
-npm notice Run npm install -g npm@8.15.1 to update!
-npm notice 
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % npm run build
-npm ERR! Missing script: "build"
-npm ERR! 
-npm ERR! To see a list of scripts, run:
-npm ERR!   npm run
-
-npm ERR! A complete log of this run can be found in:
-npm ERR!     /Users/abhishekprasad/.npm/_logs/2022-08-01T04_33_13_053Z-debug-0.log
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % npm run build
-
-> forkify@1.0.0 build
-> parcel build index.html --dist-dir ./dist
-
-✨ Built in 1.14s
+---> npm run build
 
 dist/index.html               3.93 KB    239ms
 dist/favicon.76dd299c.png     8.25 KB     97ms
@@ -31,7 +8,10 @@ dist/logo.8a7af738.png       57.71 KB    308ms
 dist/icons.c14567a0.svg       8.81 KB    259ms
 dist/index.bdce5148.css       9.89 KB    139ms
 dist/index.0e8b6270.js       33.74 KB    399ms
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git repo
+
+---> git init
+
+---> git repo
 git: 'repo' is not a git command. See 'git --help'.
 
 The most similar commands are
@@ -39,7 +19,8 @@ The most similar commands are
         reflog
         remote
         repack
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git status
+---> git status
+
 On branch master
 
 No commits yet
@@ -58,9 +39,9 @@ Untracked files:
         package.json
         src/
 
-nothing added to commit but untracked files present (use "git add" to track)
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git add -A
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git status
+---> git add -A
+
+---> git status
 On branch master
 
 No commits yet
@@ -106,8 +87,9 @@ Changes not staged for commit:
   (use "git restore <file>..." to discard changes in working directory)
         modified:   src/js/model.js
 
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git add -A
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git commit -m 'Initial commit'
+---> git add -A
+
+---> git commit -m 'Initial commit'
 [master (root-commit) 32a7831] Initial commit
  33 files changed, 6550 insertions(+)
  create mode 100644 .gitignore
@@ -143,10 +125,12 @@ abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git commit -m 'Initial
  create mode 100644 src/sass/_searchResults.scss
  create mode 100644 src/sass/_upload.scss
  create mode 100644 src/sass/main.scss
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git status                    
+
+---> git status                    
 On branch master
 nothing to commit, working tree clean
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git status
+
+---> git status
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -154,17 +138,18 @@ Changes not staged for commit:
         modified:   git_by_jonas.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git add -A                    
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git commit -m 'Initial commit'
+
+---> git add -A                    
+
+---> git commit -m 'Initial commit'
 [master 37759f3] Initial commit
  1 file changed, 150 insertions(+), 1 deletion(-)
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git status                    
+
+---> git status                    
 On branch master
 nothing to commit, working tree clean
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git status
-On branch master
-nothing to commit, working tree clean
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git log
+
+---> git log
 commit 37759f337eab75e408f1045f6552499a3d1c58e5 (HEAD -> master)
 Author: Abhi1845 <ap.abhishek1811@gmail.com>
 Date:   Mon Aug 1 11:25:07 2022 +0530
@@ -176,32 +161,43 @@ Author: Abhi1845 <ap.abhishek1811@gmail.com>
 Date:   Mon Aug 1 11:23:38 2022 +0530
 
     Initial commit
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git branch new-feature
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git checkout new-feature
+---> git branch new-feature
+
+---> git checkout new-feature
 Switched to branch 'new-feature'
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git add -A
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git commit -m 'Added new feature to branch'
+
+---> git add -A
+
+---> git commit -m 'Added new feature to branch'
 [new-feature 7fd3c78] Added new feature to branch
  1 file changed, 5 insertions(+)
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git branch
+
+---> git branch
   master
 * new-feature
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git checkout
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git checkout master
+
+---> git checkout
+
+---> git checkout master
 Switched to branch 'master'
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git merge new-feature
+
+---> git merge new-feature
 Updating 37759f3..7fd3c78
 Fast-forward
  src/js/controller.js | 5 +++++
  1 file changed, 5 insertions(+)
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git status
+
+---> git status
 On branch master
 nothing to commit, working tree clean
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git remote add origin https://github.com/Abhi1845/recipe-maker-forkify.git
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git branch        
+
+---> git remote add origin https://github.com/Abhi1845/recipe-maker-forkify.git
+
+---> git branch        
 * master
   new-feature
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git push origin master
+
+---> git push origin master
 Enumerating objects: 48, done.
 Counting objects: 100% (48/48), done.
 Delta compression using up to 8 threads
@@ -211,4 +207,4 @@ Total 48 (delta 5), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (5/5), done.
 To https://github.com/Abhi1845/recipe-maker-forkify.git
  * [new branch]      master -> master
-abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % 
+

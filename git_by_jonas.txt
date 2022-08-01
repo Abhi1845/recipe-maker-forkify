@@ -1,0 +1,8 @@
+ git init        
+
+Initialized empty Git repository in /Users/abhishekprasad/Desktop/starter-18-forkify/.git/
+
+ git config --global user.name Abhi1845
+ git config --global user.email ap.abhishek1811@gmail.com
+
+ 

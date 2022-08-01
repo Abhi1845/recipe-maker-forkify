@@ -1,12 +1,4 @@
- git init        
-
-Initialized empty Git repository in /Users/abhishekprasad/Desktop/starter-18-forkify/.git/
-
- git config --global user.name Abhi1845
- git config --global user.email ap.abhishek1811@gmail.com
-
-
- abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % npm start
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % npm start
 
 > forkify@1.0.0 start
 > parcel index.html
@@ -154,4 +146,69 @@ abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git commit -m 'Initial
 abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git status                    
 On branch master
 nothing to commit, working tree clean
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git_by_jonas.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git add -A                    
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git commit -m 'Initial commit'
+[master 37759f3] Initial commit
+ 1 file changed, 150 insertions(+), 1 deletion(-)
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git status                    
+On branch master
+nothing to commit, working tree clean
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git status
+On branch master
+nothing to commit, working tree clean
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git log
+commit 37759f337eab75e408f1045f6552499a3d1c58e5 (HEAD -> master)
+Author: Abhi1845 <ap.abhishek1811@gmail.com>
+Date:   Mon Aug 1 11:25:07 2022 +0530
+
+    Initial commit
+
+commit 32a7831c655326b85462289ea6052b529516e287
+Author: Abhi1845 <ap.abhishek1811@gmail.com>
+Date:   Mon Aug 1 11:23:38 2022 +0530
+
+    Initial commit
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git branch new-feature
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git checkout new-feature
+Switched to branch 'new-feature'
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git add -A
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git commit -m 'Added new feature to branch'
+[new-feature 7fd3c78] Added new feature to branch
+ 1 file changed, 5 insertions(+)
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git branch
+  master
+* new-feature
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git checkout
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git checkout master
+Switched to branch 'master'
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git merge new-feature
+Updating 37759f3..7fd3c78
+Fast-forward
+ src/js/controller.js | 5 +++++
+ 1 file changed, 5 insertions(+)
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git status
+On branch master
+nothing to commit, working tree clean
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git remote add origin https://github.com/Abhi1845/recipe-maker-forkify.git
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git branch        
+* master
+  new-feature
+abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % git push origin master
+Enumerating objects: 48, done.
+Counting objects: 100% (48/48), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (47/47), done.
+Writing objects: 100% (48/48), 2.11 MiB | 1.89 MiB/s, done.
+Total 48 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/Abhi1845/recipe-maker-forkify.git
+ * [new branch]      master -> master
 abhishekprasad@Abhisheks-MacBook-Air starter-18-forkify % 
